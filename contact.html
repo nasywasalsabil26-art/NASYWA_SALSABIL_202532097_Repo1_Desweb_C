@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - JakMalam</title>
+</head>
+<body>
+  <header>
+    <h1>Kontak dan Rekomendasi Tempat</h1>
+    <p>Punya tempat makan malam favorit? Ceritakan ke kami.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="content.html">Jelajah Kuliner</a></li>
+      <li><a href="detail.html">Detail Area</a></li>
+      <li><a href="contact.html">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Formulir Rekomendasi Tempat</h2>
+      <form action="contact.html" method="get">
+        <fieldset>
+          <legend>Data Pengirim</legend>
+          <p>
+            <label for="nama">Nama lengkap</label><br>
+            <input type="text" id="nama" name="nama" minlength="3" placeholder="Contoh: Nasywa Salsabil" required>
+          </p>
+          <p>
+            <label for="email">Alamat email</label><br>
+            <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tempat yang Direkomendasikan</legend>
+          <p>
+            <label for="tempat">Nama tempat atau area</label><br>
+            <input type="text" id="tempat" name="tempat" required>
+          </p>
+          <p>
+            <label for="wilayah">Wilayah</label><br>
+            <select id="wilayah" name="wilayah" required>
+              <option value="">-- Pilih wilayah --</option>
+              <option value="pusat">Jakarta Pusat</option>
+              <option value="utara">Jakarta Utara</option>
+              <option value="barat">Jakarta Barat</option>
+              <option value="selatan">Jakarta Selatan</option>
+              <option value="timur">Jakarta Timur</option>
+            </select>
+          </p>
+          <p>Jenis makanan:<br>
+            <input type="radio" id="jenis-berat" name="jenis" value="berat" required>
+            <label for="jenis-berat">Makanan berat</label><br>
+            <input type="radio" id="jenis-ringan" name="jenis" value="ringan">
+            <label for="jenis-ringan">Camilan</label><br>
+            <input type="radio" id="jenis-minum" name="jenis" value="minuman">
+            <label for="jenis-minum">Minuman dan dessert</label>
+          </p>
+          <p>Waktu yang paling pas untuk datang:<br>
+            <input type="checkbox" id="waktu-awal" name="waktu" value="awal">
+            <label for="waktu-awal">Sebelum jam 21.00</label><br>
+            <input type="checkbox" id="waktu-tengah" name="waktu" value="tengah">
+            <label for="waktu-tengah">Jam 21.00 sampai 24.00</label><br>
+            <input type="checkbox" id="waktu-larut" name="waktu" value="larut">
+            <label for="waktu-larut">Lewat tengah malam</label>
+          </p>
+          <p>
+            <label for="tanggal">Tanggal terakhir berkunjung</label><br>
+            <input type="date" id="tanggal" name="tanggal" required>
+          </p>
+          <p>
+            <label for="cerita">Cerita singkat tentang tempat ini</label><br>
+            <textarea id="cerita" name="cerita" rows="5" cols="40" minlength="10" required></textarea>
+          </p>
+        </fieldset>
+
+        <p>
+          <input type="checkbox" id="setuju" name="setuju" required>
+          <label for="setuju">Saya setuju datanya dipakai untuk keperluan rekomendasi.</label>
+        </p>
+        <button type="submit">Kirim Rekomendasi</button>
+        <button type="reset">Ulangi</button>
+      </form>
+    </section>
+
+    <aside>
+      <h2>Info Kontak</h2>
+      <ul>
+        <li>Email: jakmalam@example.com</li>
+        <li>Instagram: @jakmalam.id</li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 JakMalam | Nasywa Salsabil (202532097) | <a href="index.html">Kembali ke beranda</a></p>
+  </footer>
+</body>
+</html>
